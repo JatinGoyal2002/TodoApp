@@ -5,6 +5,14 @@ function AddInput() {
     const [data,setData] = useState([''])
     console.log("data' " + data)
     const navigate = useNavigate();
+    
+    const handleDeleteInput=(i)=>{
+        const dataCopy = [...data]
+        console.log("data' " + data + " | dataCopy' " + dataCopy)
+        dataCopy.splice(i,1)
+        console.log("data' " + data + " | dataCopy' " + dataCopy)
+        setData(dataCopy)
+    }
 
     const handleAddInput=()=>{
         setData([...data, ''])
@@ -13,14 +21,6 @@ function AddInput() {
     const handleInputChange=(e,i)=>{
         const dataCopy = [...data]
         dataCopy[i] = e.target.value
-        setData(dataCopy)
-    }
-    
-    const handleDeleteInput=(i)=>{
-        const dataCopy = [...data]
-        console.log("data' " + data + " | dataCopy' " + dataCopy)
-        dataCopy.splice(i,1)
-        console.log("data' " + data + " | dataCopy' " + dataCopy)
         setData(dataCopy)
     }
 
