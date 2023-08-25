@@ -10,7 +10,7 @@ const ItemList = ({data}) => {
             method : "DELETE"
         }).then(() => {
             console.log("Deleted");
-            // navigate(0);
+            navigate(0);
         })
     }
 
