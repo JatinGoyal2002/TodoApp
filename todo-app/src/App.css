@@ -59,9 +59,11 @@
 }
 
 .addInput{
-  width: 65%;
+  margin-left: -196px;
+    width: 68%;
     height: 38px;
     font-size: 15px;
+    margin-top: 20px;
     font-weight: 700;
 }
 
@@ -71,6 +73,8 @@
     margin-left: 19px;
     background-color: #6dff6d;
     font-weight: bold;
+    margin-top: 20px;
+    margin-left: -9%;
 }
 
 .itemName{
@@ -104,6 +108,26 @@
   width: 103px;
   height: 36px;
   
+  background-color: #ffff95;
+  font-weight: 700;
+}
+
+.deleteInput{
+  margin-top: 26px;
+  margin-left: 71px;
+  width: 103px;
+    height: 36px;
+    background-color : rgb(255 96 96);;
+    font-weight: 700;
+    position: absolute;
+}
+
+.addEdit{
+  margin-top: 40px;
+  width: 103px;
+  height: 36px;
+  margin-left: -9%;
+
   background-color: #ffff95;
   font-weight: 700;
 }
